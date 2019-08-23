@@ -17,11 +17,11 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 UNAPPROVED_MSG = ("`Hello`\n\n"
-                  "`Dont Message Me Again Nd Again I Don't Gonna Reply You`\n"
-                  "`You Just A Small Piece Of Mud Infront Of Me`\n\n"
-                  "`Akad Kisi Ki Ni Dekhi (Tere Jaise Jhaat Pe Baithte H)\n`"
+                  "`Call Me Your Papa,Your Boss is Sleeping`\n"
+                  "`Wait Until he wakes up and Slaps you 100 Times \n\n"
+                  "`Akad Kisi Ki Ni Dekha Tere Jaise Bohot Aye Aur Bohot Gaye H)\n`"
                   "`Regards,`\n"
-                  "`@DarkHackerX`")
+                  "`@Kingwillbealwaysking`")
 # =================================================================
 
 
@@ -63,8 +63,8 @@ async def permitpm(event):
 
                 if COUNT_PM[event.chat_id] > 4:
                     await event.respond(
-                        "`You were spamming my God's PM, which I don't like.`"
-                        " `Nikal Lawde Pahli Fursat Me Nikal.`"
+                        "`You were spamming my Husband's PM, which I don't like.`"
+                        " `Get Ready to Visit Hell Now,Bubye T_T .`"
                     )
 
                     try:
@@ -145,7 +145,7 @@ async def approvepm(apprvpm):
         try:
             approve(uid)
         except IntegrityError:
-            await apprvpm.edit("`This bsdka may already be approved.`")
+            await apprvpm.edit("`This Fellow Already Approved to Pm .`")
             return
 
         await apprvpm.edit(
@@ -165,7 +165,7 @@ async def blockpm(block):
     """ For .block command, block people from PMing you! """
     if not block.text[0].isalpha() and block.text[0] not in ("/", "#", "@", "!"):
 
-        await block.edit("`This chuu nubfuk has been blocked for PM-ing you Sar!`")
+        await block.edit("`This Retard has been blocked for PM-ing you Sar!`")
 
         if block.reply_to_msg_id:
             reply = await block.get_reply_message()
