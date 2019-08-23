@@ -17,9 +17,9 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 UNAPPROVED_MSG = ("`Hello`\n\n"
-                  "`Call Me Your Papa,Your Boss is Sleeping`\n"
+                  "'Your Boss is Sleeping`\n"
                   "`Wait Until he wakes up and Slaps you 100 Times \n\n"
-                  "`Akad Kisi Ki Ni Dekha Tere Jaise Bohot Aye Aur Bohot Gaye H)\n`"
+                  "`Akad Kisiko na Dikha,Tere Jaise Bohot Aye Aur Bohot Gaye H)\n`"
                   "`Regards,`\n"
                   "`@Kingwillbealwaysking`")
 # =================================================================
@@ -200,7 +200,7 @@ async def unblockpm(unblock):
     if not unblock.text[0].isalpha() and unblock.text[0] \
             not in ("/", "#", "@", "!") and unblock.reply_to_msg_id:
 
-        await unblock.edit("`Aye bc,my Master has forgiven you to PM now`")
+        await unblock.edit("`Aye You are Lucky,My King Forgiven You Now!`")
 
         if unblock.reply_to_msg_id:
             reply = await unblock.get_reply_message()
